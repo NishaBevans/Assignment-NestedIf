@@ -8,13 +8,14 @@ print ("large hall") if attendees > 100 else print("conference room")
 
 
 
+
+
+
 #Task 3: Catering Choices: Ask the user if they want "vegetarian" food. Recommend "Veggie Delight Caterers" if yes, otherwise recommend "Gourmet Meals Caterers".
 
 vegetarian = input("Would you like vegetarian food? yes/no: ")
 
-if vegetarian == "yes":
-    print("We recommend Veggie Delight Caterers!")
-else:
-    print("We recomment Gourmet Meals Caterers!")
+print("We recommend Veggie Delight Caterers!") if vegetarian else print("We recoomend Gourmet Meals Caterers!")
+
 
 
