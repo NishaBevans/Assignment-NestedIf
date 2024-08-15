@@ -6,7 +6,18 @@ print ("large hall") if attendees > 100 else print("conference room")
 
 #Task 2: Venue Selection: Based on the code from Task 1, further enhance your code to recommend additional things like "audio system" or "projector" based on the number of attendees.
 
-    #Need help Here
+audio_system = input("Would you like an audio system? yes/no: ")
+projector = input("Would you like a projector? yes/no: ")
+if attendees > 100:   
+    if audio_system == "yes" and projector == "no":
+        print("We will have the audio system ready for you!")
+    if audio_system == "yes" and projector == "yes":
+        print("We will have both set up for your event.")
+elif attendees < 100:
+    if projector == "yes" and audio_system == "no":
+        print("We will have the projector set up for you.")
+    if projector == "yes" and audio_system == "yes":
+        print("We will have both set up for your event.")
 
 
 
