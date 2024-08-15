@@ -6,7 +6,7 @@ print ("large hall") if attendees > 100 else print("conference room")
 
 #Task 2: Venue Selection: Based on the code from Task 1, further enhance your code to recommend additional things like "audio system" or "projector" based on the number of attendees.
 
-
+    #Need help Here
 
 
 
@@ -15,7 +15,9 @@ print ("large hall") if attendees > 100 else print("conference room")
 
 vegetarian = input("Would you like vegetarian food? yes/no: ")
 
-print("We recommend Veggie Delight Caterers!") if vegetarian else print("We recoomend Gourmet Meals Caterers!")
-
+if vegetarian == "yes":
+    print("We recommend Veggie Delight Caterers!")
+else:
+    print("We recomment Gourmet Meals Caterers!")
 
 
